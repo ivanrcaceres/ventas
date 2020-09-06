@@ -1,0 +1,17 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | Compra-Venta{% endblock %}
+
+{% block branding %}
+
+{#    <p>Sistema Compra - Venta</p>#}
+<a href="{% url 'admin:index' %}">
+
+    <img src="/static/img/l01.png" width="48" ><p>Compra-Venta</p>
+
+{#<img src="/static/img/compu2.png" width="210" style="margin-top: -10px">#}
+
+</a>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'admin/reporte/custom_search_form.html' %}
+{% load i18n static admin_static admin_urls %}
+{% block custom_search_form %}&nbsp;&nbsp;
+<form>
+
+    <br><br>
+    <strong>{{ asf.cliente.label }}:</strong>
+    {{ asf.cliente }}
+    <strong>{{ asf.user.label }}:</strong> &nbsp;&nbsp;
+    {{ asf.user }}
+    <strong>{{ asf.eliminado.label }}:</strong> &nbsp;&nbsp;
+    {{ asf.eliminado }}
+    <br><br/>&nbsp;&nbsp;
+    <strong>{{ asf.desde.label }}:</strong> &nbsp;&nbsp;
+    {{ asf.desde }}
+    <strong>{{ asf.hasta.label }}:</strong> &nbsp;&nbsp;
+    {{ asf.hasta }}
+
+</form>
+
+{% endblock %}
+

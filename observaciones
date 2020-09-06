@@ -1,0 +1,15 @@
+Esto hay que copiar en en index.html del vietualenv
+
+<script type="text/javascript" src="{% static "admin/js/jquery.js" %}" > </script>
+<script type="text/javascript" src="{% static "admin/inicioapps/inicioapps.js" %}" > </script>
+
+
+
+Esto hay que copiar en en base.html del vietualenv, osea hay que comentar como esta
+{#                {% if site_url %}#}
+{#                    <a href="{{ site_url }}">{% trans 'View site' %}</a> /#}
+{#                {% endif %}#}
+
+
+este ya no hace falta -- al poner en produccion, para los reportes hay que cambiar en los .js
+location.href ="http://localhost:8000/ por location.href ="http://localhost/
